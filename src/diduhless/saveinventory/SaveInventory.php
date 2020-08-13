@@ -16,7 +16,15 @@ class SaveInventory extends PluginBase {
     static private $instance;
 
     public function onLoad() {
+        $inventories_dir = $this->getDataFolder() . "inventories";
+        if(!is_dir($inventories_dir)) {
+            mkdir($inventories_dir);
+        }
         self::$instance = $this;
+    }
+
+    public function onEnable() {
+        $this->getServer()->getCommandMap()->register("inventory", new InventoryCommand());
     }
 
     public static function getInstance(): SaveInventory {

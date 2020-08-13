@@ -1,0 +1,8 @@
+main: diduhless\saveinventory\SaveInventory
+name: SaveInventory
+description: 💼 A pocketmine plugin to manage and save player's inventories
+website: https://github.com/Diduhless
+author: Didah (@Diduhless)
+api: 3.0.0
+version: 1.0.0
+# This plugin requires GiantQuartz's EasyUI virion (https://github.com/GiantQuartz/EasyUI)
